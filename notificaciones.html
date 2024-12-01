@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="notificaciones.css">
+</head>
+<body>
+    <script>
+        const enviar=()=>{
+            alert(`Hola ${document.querySelector("#nombre").value}! No te preocupes, los datos no se registran en ningun lado solo es una demo`)
+            
+        }
+    </script>
+    <a href="index.html">volver</a>
+
+    <form>
+        <h5>Registrate para notificaion por un nuevo vlog</h5>
+        <input autofocus="true" id="nombre" required type="text" placeholder="Nombre" name="nombre">
+        <input id="email" required type="text" placeholder="E-Mail" name="email">
+        <input id="btn-notificaciones" type="submit" value="Enviar info" onclick="enviar()">
+    </form>
+    
+</body>
+</html>
